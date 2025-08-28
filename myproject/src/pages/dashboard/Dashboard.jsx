@@ -54,6 +54,7 @@ const Dashboard = () => {
     p.category.toLowerCase().includes(search.toLowerCase())
   );
 
+  
   return (
     <div className="dashboard">
       <h1 className="title"><i class="fa-brands fa-product-hunt"></i> Product Management Dashboard</h1>
