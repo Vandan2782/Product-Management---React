@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 60%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 180px;
+}
+
+.product-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-form button:hover {
+  background: #0056b3;
+}
+
+/* For The Product Card Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  max-width: 100px;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-actions button:first-child {
+  background: #ffc107;
+  color: #000;
+}
+
+.product-actions button:last-child {
+  background: #dc3545;
+  color: white;
+}
