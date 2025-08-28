@@ -9,7 +9,7 @@ const ProductList = ({ products, onEdit, onDelete }) => {
             <img src={p.image} alt={p.title} className="product-image" />
             <h3 className="product-title">{p.title}</h3>
             <p className="product-category">{p.category}</p>
-            <p className="product-price">${p.price}</p>
+            <p className="product-price">₹{p.price}</p>
             <div className="product-actions">
               <button onClick={() => onEdit(p)}><i class="fa-solid fa-pencil"></i> Edit</button>
               <button onClick={() => onDelete(p.id)}><i class="fa-solid fa-trash"></i> Delete</button>
